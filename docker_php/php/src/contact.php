@@ -1,3 +1,4 @@
+<?php include 'session.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +13,10 @@
         <img id="logo-img" alt="logo" src="./assets/logo.png">
         <ul class="navbar-items">
             <a href="index.php"><p id="main">STRONA GŁÓWNA</p></a>
+            <?php navbar_items(); ?>
             <a href="contact.php"><p id="contact" class="active">KONTAKT</p></a>
             <a href="faq.php"><p id="faq">FAQ</p></a>
+            <?php logout_button(); ?>
         </ul>
     </div>
     <div class="banner">

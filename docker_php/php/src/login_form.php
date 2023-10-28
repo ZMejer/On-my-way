@@ -21,7 +21,7 @@
             <label for="password">Hasło</label>
             <input type="password" name="password" id="password">
         </div><br style="clear:both;">
-        <input type="submit" value="Utwórz konto" name="submit-btn" id="submit-btn-login">
+        <input type="submit" value="Zaloguj się" name="submit-btn" id="submit-btn-login">
         </form>
     </div>
     <div class="decoration" style="float:left;">
