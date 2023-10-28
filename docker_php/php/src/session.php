@@ -3,7 +3,7 @@ session_start();
     if(isset($_SESSION['id'])){
         function navbar_items(){
             $url = (!empty($_SERVER['HTTPS'])) ? "https://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] : "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-            if ($url == "http://localhost/profile.php"){
+            if ($url == "http://localhost/profile.php" or $url == "http://localhost/tasks_history.php"){
                 $profile_class = "active";
                 $posts_class = "";
             }

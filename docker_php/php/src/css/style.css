@@ -402,3 +402,9 @@ display: inline-block;
 }
 
 /*posts page end*/
+
+#problem, #need {
+    height: 10em;
+    width: 30em;
+}
+

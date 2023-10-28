@@ -31,27 +31,14 @@ include 'session.php'
         </ul>
     </div>
     <div class="flex-row">
-        <h1>Mój profil</h1>
+        <h1>Historia zleceń</h1>
             <div class="sidebar">
                 <p><a href="">Ranking</a></p>
                 <p><a href="">Moje profity</a></p>
-                <p><a href="tasks_history.php">Historia zleceń</a></p>
+                <p><a href="profile.php">Mój profil</a></p>
             </div>
             <div class="content">
-                <label for="email">Adres E-mail</label>
-                <input type="text" id="email" placeholder="gracjan@gmail.com">
                 
-                <label for="address">Adres zamieszkania</label>
-                <input type="text" id="address" placeholder="Adres zamieszkania">
-                
-                <label for="pass">Hasło</label>
-                <input type="password" id="pass" placeholder="gracjan@gmail.com">
-                <div id="group_submit">
-                    <input type="submit" id="send_changes" value="Zatwierdź zmiany"></input>
-                    <form method="POST" action="delete_account.php">
-                        <input type="submit" id="account_delete" name="account_delete" value="Usuń konto"></input>
-                    </form>
-                </div>
             </div>
     </div>
 
