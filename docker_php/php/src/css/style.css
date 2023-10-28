@@ -1,0 +1,98 @@
+@font-face { 
+    font-family: 'Satoshi-Variable';
+    src: url('./../assets/Satoshi-Variable.ttf') format('truetype');
+    }
+
+body {
+    background-color: #618662;
+    font-family: 'Satoshi-Variable';
+}
+
+#logo-img {
+    width: 20em;
+    height: auto;
+    float: left;
+}
+
+.navbar {
+    margin-top: 1em;
+    margin-left: 1em;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    font-size: 1.5em;
+}
+
+.active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.banner {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:10%;
+
+}
+
+h1 {
+    color: #000;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+#banner-img {
+    height: 30em;
+    width: auto;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.banner-btn {
+    height: 3em;
+    width: 10em;
+    font-size: 1.3em;
+    margin-top:1em;
+    border-radius: 1em;
+    text-decoration: none;
+}
+
+#registration-btn {
+    margin-left:1.5em;
+    background-color: #cfb73e;
+}
+
+#registration-btn:hover {
+    background-color: #fff1a9;
+    transition: 0.3s;
+}
+
+
+#login-btn:hover {
+    background-color: #fff;
+    transition: 0.3s;
+}
