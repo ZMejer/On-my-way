@@ -321,3 +321,8 @@ input[id="account_delete"] {
     background-color: white;
     margin-top: 3em;
 }
+
+#problem, #need {
+    height: 10em;
+    width: 30em;
+}
