@@ -83,4 +83,16 @@ button, input[type="submit"], input[type="reset"] {
 
 #registration-btn {
     margin-left:1.5em;
+    background-color: #cfb73e;
+}
+
+#registration-btn:hover {
+    background-color: #fff1a9;
+    transition: 0.3s;
+}
+
+
+#login-btn:hover {
+    background-color: #fff;
+    transition: 0.3s;
 }
