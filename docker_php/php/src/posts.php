@@ -14,23 +14,17 @@
     <div class="navbar">
         <img id="logo-img" alt="logo" src="./assets/logo.png">
         <ul class="navbar-items">
-            <a href="index.php"><p id="main" class="active">STRONA GŁÓWNA</p></a>
+            <a href="index.php"><p id="main">STRONA GŁÓWNA</p></a>
             <?php navbar_items(); ?>
             <a href="contact.php"><p id="contact">KONTAKT</p></a>
             <a href="faq.php"><p id="faq">FAQ</p></a>
             <?php logout_button(); ?>
         </ul>
     </div>
-    <div class="banner">
-        <div id="banner-text">
-            <h1>
-                Łączymy ludzi, realizujemy zadania. <br>
-                Dzisiaj pomagasz Ty, jutro ktoś pomoże Tobie
-            </h1>
-            <a href="login_form.php"><button class="banner-btn" id="login-btn">Logowanie</button></a>
-            <a href="registration_form.php"><button class="banner-btn" id="registration-btn">Rejestracja</button></a>
+    <div id="posts-container">
+        <div id="posts-background">
+            
         </div>
-        <img id="banner-img" alt="banner" src="./assets/baner.png">
     </div>
 </body>
 </html>

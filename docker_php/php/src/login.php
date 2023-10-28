@@ -1,7 +1,6 @@
 <?php
 include 'db_connect.php';
-function login()
-{
+
     $conn = connect();
     $login = $_POST['login'];
     $password = md5($_POST['password']);
@@ -18,14 +17,19 @@ function login()
         $_SESSION['password'] = $row['password'];
         $_SESSION['city'] = $row['city'];
         $_SESSION['address'] = $row['address'];
-        $correct_data = True;
+        header('Location: ' . 'index.php');
     }
     else {
-        $correct_data = False;
+        function login_info(){
+            echo "<h1 class='login-info'>Wprowadzone dane są nieprawidłowe.</h1>";
+        }
+        function login_info_button(){
+            echo "<a href='login_form.php'><button class='btn'>Wróć do logowania</button></a>";
+        }
     }
-}
 
-login();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -37,15 +41,15 @@ login();
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>
-        <?php
-            if($correct_data){
-                echo "Udało się zalogować. Witaj ".$_SESSION['login'];
-            }
-            else {
-                echo "Nie udało się zalogować";
-            }
-        ?>
-    </h1>
+    <div class="login-info-container login-info-text">
+    <?php
+        login_info();
+    ?>
+    </div>
+    <div class="login-info-container">
+    <?php
+        login_info_button();
+    ?>
+    </div>
 </body>
 </html>

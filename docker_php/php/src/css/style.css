@@ -22,22 +22,25 @@ body {
     justify-content: space-between;
 }
 
-ul a {
+ul a, .logout-btn {
     text-decoration: none;
     color: #000;
 }
 
-ul a:hover {
+ul a:hover, .logout-btn {
     color: #fff;
     transition: 0.3s;
 }
 
 .navbar-items {
     display: flex;
-    justify-content: space-between;
-    width: 35%;
     font-size: 1.5em;
 }
+
+a p, .logout-btn {
+    margin-left:1em;
+}
+
 
 .active {
     border-bottom: 2px solid #fff;
@@ -70,6 +73,19 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.logout-btn {
+    background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  color: black;
+}
+
+.logout-btn:hover {
+    color: white;
+    transition: 0.3s;
 }
 
 .banner-btn {
@@ -109,6 +125,12 @@ button, input[type="submit"], input[type="reset"] {
     margin-top:0.3em;
 }
 
+.btn {
+    height: 2.8em;
+    width: 20em;
+    border-radius: 1em;
+    font-size:1em;
+}
 
 #login, #name, #city {
     margin-right: 3em;
@@ -127,7 +149,7 @@ button, input[type="submit"], input[type="reset"] {
     width:15em;
 }
 
-#submit-btn-login {
+#submit-btn-login, .btn {
     background: linear-gradient(90deg, #92B993 0%, #FFF 156.27%);
     color: white;
     display: block;
@@ -135,7 +157,7 @@ button, input[type="submit"], input[type="reset"] {
     width:15em;
 }
 
-#submit-btn:hover, #submit-btn-login:hover {
+#submit-btn:hover, #submit-btn-login:hover, .btn:hover {
     background: linear-gradient(90deg, #6b936b 0%, #e2e2e2 156.27%);
     transition: 0.3s;
 }
@@ -201,4 +223,30 @@ a span {
 .login-form {
     margin-top: 15vh;
     width: 70%;
+}
+
+.login-info-container {
+    display:flex;
+    justify-content: center;
+}
+
+.login-info-text {
+    margin-top:20vh;
+}
+
+.btn {
+    font-size: 1.5em;
+}
+
+#posts-container {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:80vh;
+}
+
+#posts-background {
+    width: 85%;
+    background-color: white;
 }
