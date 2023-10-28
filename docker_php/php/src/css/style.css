@@ -123,6 +123,7 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
     background-color: #d9d9d9;
     margin-top:0.3em;
+    padding-left: 1em;
 }
 
 .btn {
@@ -225,6 +226,75 @@ a span {
     width: 70%;
 }
 
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.flex-row > h1 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+}
+
+.flex-row > .sidebar, .content {
+    margin-top: 3em;
+}
+
+.flex-row > .sidebar {
+    float: left;
+    width: 20%;
+    border-right: 1px solid #EEE;
+    margin-left: auto;
+    margin-top: 5em;
+}
+
+.flex-row > .content {
+    width: 75%;
+    padding-left: 20px;
+}
+
+.flex-row > .content > label {
+    margin-top: 1em;
+}
+.flex-row > .content > input[type="text"],input[type="password"]  {
+    height: 2.8em;
+    width: 20em;
+    border-radius: 1em;
+    border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    background-color: #d9d9d9;
+    margin-top:0.3em;
+    padding-left: 1em;
+}
+#group_submit {
+margin-top: 20px;
+}
+input[id="send_changes"] {
+    padding: 10px 20px;
+    color: #000AFF;
+    border: none;
+    background-color: #EEE;
+    cursor: pointer;
+    float: left;
+}
+input[id="account_delete"] {
+    padding: 10px 20px;
+    color: #F00;
+    border: none;
+    background-color: white;
+    margin-right: 100px;
+    cursor: pointer;
+    float: right;
+
+
 .login-info-container {
     display:flex;
     justify-content: center;
@@ -249,4 +319,5 @@ a span {
 #posts-background {
     width: 85%;
     background-color: white;
+
 }
