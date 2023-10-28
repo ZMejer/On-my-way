@@ -22,12 +22,12 @@ body {
     justify-content: space-between;
 }
 
-a {
+ul a {
     text-decoration: none;
     color: #000;
 }
 
-a:hover {
+ul a:hover {
     color: #fff;
     transition: 0.3s;
 }
@@ -95,4 +95,110 @@ button, input[type="submit"], input[type="reset"] {
 #login-btn:hover {
     background-color: #fff;
     transition: 0.3s;
+}
+
+.registration-form input, .login-form input {
+    height: 2.8em;
+    width: 20em;
+    border-radius: 1em;
+    border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    background-color: #d9d9d9;
+    margin-top:0.3em;
+}
+
+
+#login, #name, #city {
+    margin-right: 3em;
+}
+
+#email {
+    width: 43em;
+}
+
+#submit-btn {
+    background: linear-gradient(90deg, #92B993 0%, #FFF 156.27%);
+    color: white;
+    display: block;
+    float: right;
+    margin-top: 1em;
+    width:15em;
+}
+
+#submit-btn-login {
+    background: linear-gradient(90deg, #92B993 0%, #FFF 156.27%);
+    color: white;
+    display: block;
+    margin-top: 3em;
+    width:15em;
+}
+
+#submit-btn:hover, #submit-btn-login:hover {
+    background: linear-gradient(90deg, #6b936b 0%, #e2e2e2 156.27%);
+    transition: 0.3s;
+}
+
+.form {
+    width: 65%;
+    height: 98vh;
+    display: flex;
+    place-self: center;
+    margin: 0;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.registration-form {
+    margin-top: 15vh;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    margin-top:2em;
+}
+
+.decoration {
+    width:35%;
+    display: flex;
+    justify-content: center;
+}
+
+#house-img {
+    margin-top: 20vh;
+    width: 30em;
+
+}
+
+span a {
+    color:#0500ff;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    width: 3em;
+}
+
+a span {
+    color: #618662;
+    font-size: 1.5em;
+    margin-left:0.5em;
+}
+
+.go-back-btn {
+    display: block;
+    float: right;
+}
+
+.login-form {
+    margin-top: 15vh;
+    width: 70%;
 }

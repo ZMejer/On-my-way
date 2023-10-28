@@ -9,7 +9,6 @@
     <?php include 'db_connect.php' ?>
 </head>
 <body>
-    <?php #connect(); ?>
     <div class="navbar">
         <img id="logo-img" alt="logo" src="./assets/logo.png">
         <ul class="navbar-items">
@@ -24,8 +23,8 @@
                 Łączymy ludzi, realizujemy zadania. <br>
                 Dzisiaj pomagasz Ty, jutro ktoś pomoże Tobie
             </h1>
-            <button class="banner-btn" id="login-btn">Logowanie</button>
-            <button class="banner-btn" id="registration-btn">Rejestracja</button>
+            <a href="login_form.php"><button class="banner-btn" id="login-btn">Logowanie</button></a>
+            <a href="registration_form.php"><button class="banner-btn" id="registration-btn">Rejestracja</button></a>
         </div>
         <img id="banner-img" alt="banner" src="./assets/baner.png">
     </div>
