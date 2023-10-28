@@ -1,17 +1,28 @@
 <?php
 function connect(){
-    $servername = "localhost";
-    $username = "username";
-    $password = "password";
+    $servername = "db";
+    $username = "root";
+    $password = "root";
+    $database = "on_my_way";
 
-    $conn = mysqli_connect($servername, $username, $password);
+    $conn = mysqli_connect($servername, $username, $password, $database);
 
     if (!$conn) {
-        die('Could not connect: ' . mysqli_error());
+        die("Błąd połączenia z bazą danych: " . mysqli_connect_error());
     }
 
-    echo 'Connected successfully';
-    mysql_close($conn);
-}
+    $query = "SELECT * FROM users";
+    
+    $result = mysqli_query($conn, $query);
 
+    if (!$result) {
+        die("Błąd zapytania: " . mysqli_error($conn));
+    }
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        #echo $row['name']." "; 
+    }
+
+    mysqli_close($conn);
+}
 ?>
