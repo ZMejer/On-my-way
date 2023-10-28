@@ -9,7 +9,7 @@
     <?php include 'db_connect.php' ?>
 </head>
 <body>
-    <?php connect(); ?>
+    <?php #connect(); ?>
     <div class="navbar">
         <img id="logo-img" alt="logo" src="./assets/logo.png">
         <ul class="navbar-items">
