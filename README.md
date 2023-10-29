@@ -42,7 +42,7 @@ Projekt używa Dockera do zarządzania zależnościami i środowiskiem. Aby uruc
 
 ## 🤝 Jak się zaangażować?
 
-Wejdź na naszą stronę www.podrodze.pl
+Wejdź na naszą stronę [www.podrodze.pl](https://po-drodze.000webhostapp.com/index.php)
 Zarejestruj się
 Wejdź w ogłoszenia
 Dodaj ogłoszenie lub znajdź ogłoszenie, które najbardziej Ci odpowiada
