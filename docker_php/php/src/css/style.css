@@ -452,3 +452,18 @@ display: inline-block;
 .text1{
     text-align: center;
 }
+
+.text-bold {
+    font-weight: bold;
+}
+
+.faq-container {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.faq-inner-container {
+    width: 70%;
+}
