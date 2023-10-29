@@ -223,6 +223,7 @@ a span {
 }
 
 .login-form {
+    margin: auto;
     margin-top: 15vh;
     width: 70%;
 }
@@ -446,4 +447,8 @@ display: inline-block;
     width: 65%;
     height: 98vh;
     background-color: #F2F2F2;
+}
+
+.text1{
+    text-align: center;
 }

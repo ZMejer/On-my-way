@@ -72,7 +72,7 @@
                     echo "</div>";
                 }
             } else {
-                echo "Obecnie brak ogłoszeń.";
+                echo "<h3 class=\"text1\">Obecnie brak ogłoszeń.</h3>";
             }            
         ?>
     </main>
