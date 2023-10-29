@@ -5,7 +5,7 @@
      $problem = $_POST['problem'];
      $need = $_POST['need'];
      $user_id = $_SESSION['id'];
-     $sql = "INSERT INTO posts VALUES (null, '$user_id', '$problem', '$need', '0')";
+     $sql = "INSERT INTO posts VALUES (null, '$user_id', '$problem', '$need', '0', '0')";
          if (mysqli_query($conn, $sql)) {
              $url = 'posts.php';
              header("Location: $url");
