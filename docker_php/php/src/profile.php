@@ -39,13 +39,17 @@ include 'session.php'
             </div>
             <div class="content">
                 <label for="email">Adres E-mail</label>
-                <input type="text" id="email" placeholder="gracjan@gmail.com">
-                
+                <?php 
+                    echo "<input type='password' id='pass' placeholder='". $_SESSION['email'] ."'>";
+                ?>
                 <label for="address">Adres zamieszkania</label>
-                <input type="text" id="address" placeholder="Adres zamieszkania">
-                
+                <?php 
+                    echo "<input type='password' id='pass' placeholder='". $_SESSION['city'] . ", " .$_SESSION['address'] ."'>";
+                ?>
                 <label for="pass">Hasło</label>
-                <input type="password" id="pass" placeholder="gracjan@gmail.com">
+                <?php 
+                    echo "<input type='password' id='pass' placeholder='&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;'>";
+                ?>
                 <div id="group_submit">
                     <input type="submit" id="send_changes" value="Zatwierdź zmiany"></input>
                     <form method="POST" action="delete_account.php">
