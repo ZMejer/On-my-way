@@ -16,7 +16,7 @@
         <a class="go-back-btn" id="go-back-btn-login" href="posts.php"><img src="./assets/arrow.png"><span>Wróć</span></a>
         <br style="clear:both;" />
         <div style="float:left; margin-top:3em;">
-            <label for="problem">Co tobie dolega?</label>
+            <label for="problem">Co Tobie dolega?</label>
             <input type="text" name="problem" id="problem">
         </div>
         <div style="float:left;">

@@ -29,32 +29,54 @@
             <?php logout_button(); ?>
         </ul>
     </div>
+<div class="main-container">
     <main>
         <div class="header">
-            <input class="search-bar" type="text" placeholder="Szukaj...">
-            <button class="search-bar" id="add-post">Dodaj Ogłoszenie</button>
+            <form method="POST" action="add_post_form.php">
+                <input type="submit" class="search-bar" id="add-post" value="Dodaj ogłoszenie">
+            </form>
+            <form method="POST" action="my_posts.php">
+                <input style="margin-left:3em;" type="submit" class="search-bar" id="add-post" value="Moje ogłoszenia">
+            </form>
         </div>
-        <div class="announcement">
-            <div class="announcement-detail">
-                <text>Gracjan, 21 lat</text>
-                <text>Kołobrzeg, Kwiatowa 10</text>
-                <h3>Pomoc w kupnie 1 zgrzewki wody</h3>
-                <p>Jestem po operacji kolana. Mam utrudnione chodzenie</p>
-                <em>Status: Nierozwiązano</em>
-            </div>
-            <button class="edit-btn">Pomagam</button>
-        </div>
-        <div class="announcement">
-            <div class="announcement-detail">
-                <p>Gracjan, 21 lat</p>
-                <span>Kołobrzeg, Rybacka 8e</span>
-                <h3>Wyprowadzenie psa</h3>
-                <p>Jestem po operacji kolana. Mam utrudnione poruszanie</p>
-                <em>Status: Nierozwiązano</em>
-            </div>
-            <button class="edit-btn">Pomagam</button>
-        </div>
+        <?php
+            $conn = connect();
+            $sql = "SELECT * FROM posts";
+            $result = mysqli_query($conn, $sql);
+            
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<div class='announcement'>";
+                    echo "<div class='announcement-detail'>";
+                    $user_id = $row['user_id'];
+                    $user_info_sql = "SELECT name, city, address from users WHERE id='$user_id'";
+                    $user_info_result = mysqli_query($conn, $user_info_sql);
+                    if ($user_info_result) {
+                        $user_info = mysqli_fetch_assoc($user_info_result);
+                        echo "<text>" . $user_info['name'] . ", </text>";
+                        echo "<text>" . $user_info['city'] . ", " . $user_info['address'] . "</text>";
+                        echo "<h3>" . $row['need'] . "</h3>";
+                        echo "<p>" . $row['problem'] . "</p>";
+                        if($row['is_completed'] == 0) {
+                            echo "<em> Status: Nierozwiązano </em>";
+                        }
+                        else {
+                            echo "<em> Status: Rozwiązano </em>";
+                        }
+                    } else {
+                        echo "";
+                    }
+                    echo "</div>";
+                    echo "<button class='edit-btn'>Pomagam</button>";
+
+                    echo "</div>";
+                }
+            } else {
+                echo "Obecnie brak ogłoszeń.";
+            }            
+        ?>
     </main>
+</div>
 </body>
 
 </html>

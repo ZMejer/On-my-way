@@ -6,6 +6,7 @@
 body {
     background-color: #618662;
     font-family: 'Satoshi-Variable';
+    overflow: scroll;
 }
 
 #logo-img {
@@ -229,6 +230,7 @@ a span {
 /*profile page start*/
 
 .flex-row {
+    border-radius: 1em;
     display: flex;
     justify-content: space-between;
     width: 80vw;
@@ -236,6 +238,7 @@ a span {
     padding: 25px;
     background-color: white;
     margin-top:3em;
+    box-shadow: 5px 10px 25px rgb(47, 47, 47);
 }
 
 .flex-row > h1 {
@@ -327,42 +330,56 @@ input[id="account_delete"] {
 
 /*posts page start*/
 
+.main-container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:3em;
+}
+
 main{
     background-color: white;
     justify-content: center;
-    width: 100%;
-    height: 80vh;
-    border-radius: 8px;
+    width: 80vw;
+    border-radius: 1em;
+    box-shadow: 5px 10px 25px rgb(47, 47, 47);
+    margin-bottom: 5em;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 20px;
     color: white;
     border-radius: 8px;
 }
 
 .search-bar {
+    margin-top:1em;
     background-color: white;
-    margin: auto;
     padding: 10px;
     width: 250px;
     border: none;
-    border-radius: 4px;
+    border-radius: 1em;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 5px 5px 0px rgba(0, 0, 0, 0.09), 0px 11px 7px 0px rgba(0, 0, 0, 0.05), 0px 20px 8px 0px rgba(0, 0, 0, 0.01), 0px 31px 9px 0px rgba(0, 0, 0, 0.00);
+}
+
+.search-bar:hover {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 5px 5px 0px rgba(0, 0, 0, 0.09), 0px 11px 7px 0px rgba(0, 0, 0, 0.07), 0px 20px 8px 0px rgba(0, 0, 0, 0.05), 0px 31px 9px 0px rgba(0, 0, 0, 0.00);
+    transition: 0.3s;
+
 }
 
 .announcement {
     background-color: white;
     border-radius: 8px;
-    margin-top: 20px;
     padding: 15px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
     margin-left: 10vw;
     margin-right: 10vw;
+    padding: 3em;
 }
 
 .announcement-detail {
@@ -373,15 +390,20 @@ main{
 .edit-btn {
     padding: 5px 5px;
     border: none;
-    border-radius: 4px;
+    border-radius: 1em;
+    height:2.5em;
     color: white;
     cursor: pointer;
     background: linear-gradient(90deg, #F55F5F 0%, rgba(245, 95, 95, 0.00) 280.53%);
 }
 
+.edit-btn:hover {
+    background: linear-gradient(90deg, #ca8181 0%, rgba(58, 49, 49, 0) 280.53%);
+    transition: 0.3s;
+}
+
 #add-post{
-    position: absolute;
-    right: 30px;
+    margin-bottom: 5em;
 }
 
 .announcement-detail {
@@ -408,3 +430,20 @@ display: inline-block;
     width: 30em;
 }
 
+.delete-btn {
+    width: 7em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 1em;
+    height:2.5em;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(90deg, #F55F5F 0%, rgba(245, 95, 95, 0.00) 280.53%);
+}
+
+.my-posts {
+    width: 65%;
+    height: 98vh;
+    background-color: #F2F2F2;
+}

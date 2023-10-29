@@ -10,19 +10,6 @@ function connect(){
     if (!$conn) {
         die("Błąd połączenia z bazą danych: " . mysqli_connect_error());
     }
-
-    /*$query = "SELECT * FROM users";
-    
-    $result = mysqli_query($conn, $query);
-
-    if (!$result) {
-        die("Błąd zapytania: " . mysqli_error($conn));
-    }
-
-    while ($row = mysqli_fetch_assoc($result)) {
-        #echo $row['name']." "; 
-    }*/
-    
     return $conn;
 }
 ?>
