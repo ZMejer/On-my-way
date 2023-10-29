@@ -19,7 +19,20 @@
             <?php logout_button(); ?>
         </ul>
     </div>
-    <div class="banner">
+    <div class="contact-container">
+        <div class="contact-content">
+            <form class="contact-form">
+                <label for='name'>Imię</label>
+                <input type='text' id='name' name='name' placeholder="Imię"></input>
+                <label for='email1'>E-mail</label>
+                <input type='email' id='email1' name='email1' placeholder="E-mail"></input>
+                <label for='message'>Wiadomość</label>
+                <input type='text' id='message' name='message' placeholder="Wiadomość"></input>
+                <button style='margin-bottom:1em;' type='submit' id='send-btn'>Wyślij</button>
+                <text style="color:#666666;">Wyślij wiadomość, a my skontaktujemy się z Tobą <br> najszybciej, jak to możliwe.</text>
+
+            </form>
+        </div>
     </div>
 </body>
 </html>
